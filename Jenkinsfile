@@ -5,8 +5,10 @@ pipeline {
         stage('Build') {
             steps {
 
-                // Build the Maven project
-                bat 'mvn clean package'
+                dir('java-web-project') {
+                    // Build the Maven project
+                    bat 'mvn clean package'
+                }
             }
         }
     }
