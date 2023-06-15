@@ -6,7 +6,7 @@ pipeline {
             steps {
 
                 // Build the Maven project
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
